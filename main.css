@@ -1,0 +1,16 @@
+.div-bolos{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.div-bolos h3{background-color: rgb(37, 37, 5);}
+.div-bolos ul{list-style-type: none;}
+.div-bolos ul li{padding: 10px 0px; text-transform: capitalize;}
+
+.img-jogo{
+    width: 35%;
+    height: 350px;
+    object-fit: fill;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgb(30, 233, 216);
+    size: 30vw;
+}

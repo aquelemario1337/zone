@@ -1,0 +1,15 @@
+@media screen  and (max-width:768px){
+    .header{flex-direction: column; width: 100vw;}
+    .lista-menu{flex-direction: column;text-align: center;}
+    #icone-menu{display: block;}
+    .item-menu{display: none;}
+    .ativar{display: block;}
+    .item-menu:hover{background-color: burlywood; 
+        width:100vw ; color: rgb(85, 139, 121);  
+    }
+    .link-menu:hover{color: aquamarine;}
+    #icone-menu:hover{background-color: aqua;}
+    .link-carrossel{top: 90%;font-size: 1.2rem; text-align: center;}
+    .kit,.bolos{grid-template-columns: 1fr;}
+    .footer{flex-direction: column;justify-content: center;height: auto;}
+}

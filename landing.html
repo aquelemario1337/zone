@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/rep.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Documen</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2? family= Arquivo:wght@300 & display=swap');
+
+
+
+
+
+
+  
+</style>
+</head>
+<body bgcolor="00000">
+  
+   
+ 
+    <header class="header">
+        <h1 class="logo-txt"> gameszone </h1>
+
+        <div>
+            <span id="icone-menu" class="material-symbols-outlined">menu</span>
+        </div>
+        <nav class="menu">
+            <ul class="lista-menu">
+                <li class="item-menu"><a href="#jogos" class="link-menu">ps4</a></li>
+                <li class="item-menu"><a href="#jogos" class="link-menu">xbox</a></li>
+                <li class="item-menu"><a href="#jogos" class="link-menu">pc</a></li>
+                <li class="item-menu"><a href="#" class="link-menu">Clientes</a></li>
+                <li class="item-menu"><a href="#" class="link-menu">Fale Conosco </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="carrossel" id="carrossel">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/xb.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/images.jfif" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/download.jfif" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/pc.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/b.png" alt="">
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <h2 class="titulo-carrossel">jogos</h2>
+            <a href="" target="_blank" 
+             class="link-carrossel">Compre aqui!</a>
+
+        </section> <!-- final do carrossel --> 
+
+<section class="txt">
+    <div class="div-txt">
+       <center> <h1>Os melhores jogos só aqui</h1></center>
+       <h2>  Com o melhor preço para seu bulso</h2>
+       <h3></h3>
+
+    </div>
+
+</section>
+
+
+
+<br><br>
+
+        <section class="jogo" id="jogo">
+            <div class="div-jogo">
+                <img src="img/pc.jpg" alt="" class="img-jogo">
+       <h3 > <a href="#">Compra assassin's creed odyssey por R$150,00   </a></h3>
+            </div>
+
+            <div class="div-jogo">
+                <img src="img/xb.jpg" alt="" class="img-jogo">
+       <h3> <a href="#">Compra Assassin's creed 3 por R$40,00   </a></h3>
+            </div>
+            <div class="div-jogo">
+                <img src="img/doom.jfif" alt="" class="img-jogo">
+       <h3> <a href="#">Compra Doom por R$200,00 </a></h3>
+            </div>
+            
+
+            <div class="div-jogo">
+                <img src="img/b.png" alt="" class="img-jogo">
+       <h3> <a href="#"> Compra bloodborne por R$180,00 </a></h3>
+            </div>
+
+
+
+            <footer class="footer">
+                <div class="div-footer">
+                    <h1 class="div-footer">FALE CONOSCO</h1>
+                    </div>
+                    <div class="div-footer">
+                        <ul class="lista-footer">
+                            <li class="item-footer">
+                                <a href=""><img src="img/face.png" alt="" class="img-footer">
+                            </li></a>
+                            <li class="item-footer">
+                                <a href=""><img src="img/insta.jfif" alt="" class="img-footer">
+                            </li></a>
+                            <li class="item-footer">
+                                <a href=""><img src="img/zapzap.jfif" alt="" class="img-footer">
+                            </li></a>
+                        </ul>
+                        
+                        </ul>
+                    </div>
+        
+            </footer>
+            
+
+            <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script>
+        const menu = document.getElementById("icone-menu");
+        const link = document.getElementsByClassName("item-menu");
+
+        menu.addEventListener("click", () => {
+            for (i = 0; i <= link.length; i++) {
+                link[i].classList.toggle("ativar");
+            }
+        });
+    </script>
+</body>
+</html>
